@@ -3619,6 +3619,7 @@
     <Content Include="Views\Shared\_UserLayout.cshtml" />
     <Content Include="Views\User\Archive.cshtml" />
     <Content Include="Views\User\PendingRequest.cshtml" />
+    <Content Include="Views\User\SubmitIdea.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
