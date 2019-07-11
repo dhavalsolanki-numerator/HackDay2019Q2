@@ -7770,7 +7770,7 @@ fieldset[disabled] .form-control {
 /* Login Page ================================== */
 .login-page {
     /*padding-left: 0;*/
-    background-image: url('Images/main-bg.jpg');
+    /*background-image: url('Images/main-bg.jpg');*/
     background-size: cover;
     background-attachment: fixed;
     max-width: 360px;
@@ -7785,6 +7785,9 @@ fieldset[disabled] .form-control {
     font-size: 14px;
     text-decoration: none;
     color: #00BCD4; }
+  .login-page .header:hover{ background-color: #e6e6e6;}
+  .login-page .header a{font-size:15px;}
+  .login-page .header .material-icons{padding-top: 5px;}
   .login-page .login-box .logo {
     margin-bottom: 20px; }
     .login-page .login-box .logo a {
@@ -7802,7 +7805,7 @@ fieldset[disabled] .form-control {
 
 /* Sign Up Page ================================ */
 .signup-page {
-  background-color: #00BCD4;
+  background-color: #004b51;
   padding-left: 0;
   max-width: 360px;
   margin: 5% auto;
