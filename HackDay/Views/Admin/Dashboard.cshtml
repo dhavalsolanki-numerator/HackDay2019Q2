@@ -1,0 +1,261 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="container-fluid">
+    <div class="block-header">
+        <h2>DASHBOARD</h2>
+    </div>
+    <!-- Widgets -->
+    <div class="row clearfix">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="info-box-4">
+                <div class="content">
+                    <div class="text">Current Quarter</div>
+                    <div class="number">2019 - Q3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row clearfix">
+       
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="info-box">
+                <div class="icon bg-dark-green">
+                    <i class="material-icons">bookmark</i>
+                </div>
+                <div class="content">
+                    <div class="text">TOTAL IDEAS</div>
+                    <div class="number count-to" data-from="0" data-to="25" data-speed="1000" data-fresh-interval="20">25</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="info-box">
+                <div class="icon bg-dark-green2">
+                    <i class="material-icons">group</i>
+                </div>
+                <div class="content">
+                    <div class="text">TOTAL TEAM</div>
+                    <div class="number count-to" data-from="0" data-to="15" data-speed="1000" data-fresh-interval="20">15</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="info-box">
+                <div class="icon bg-teal">
+                    <i class="material-icons">face</i>
+                </div>
+                <div class="content">
+                    <div class="text">TOTAL MEMBERS</div>
+                    <div class="number count-to" data-from="0" data-to="157" data-speed="1000" data-fresh-interval="20">157</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #END# Widgets -->
+    <div class="row clearfix">
+        <!-- Task Info -->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="card">
+                <div class="header">
+                    <h2>Approved Ideas</h2>
+                </div>
+                <div class="body">
+                    <div class="table-responsive">
+
+                        <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Idea</th>
+                                    <th>Approved Team(s)</th>
+                                    <th># Member</th>
+                                </tr>
+                            </thead>
+                            @*<tfoot>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Idea</th>
+                                    <th>Team(s)</th>
+                                    <th>Total Member</th>
+                                </tr>
+                            </tfoot>*@
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <td>Setup Eng Coding Challenge on Numerator.com</td>
+                                    <td>Team A</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <td>
+                                        HackDay Tool / Website
+                                    </td>
+                                    <td>Team B</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <th>3</th>
+                                    <td>Setup Eng Coding Challenge on Numerator.com</td>
+                                    <td>Team D</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <th>4</th>
+                                    <td>eReceipt as a Service</td>
+                                    <td>Team F</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th>5</th>
+                                    <td>HTML5 Ad Deduplication</td>
+                                    <td>Team I</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <th>6</th>
+                                    <td>Setup Eng Coding Challenge on Numerator.com</td>
+                                    <td>Team J</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th>7</th>
+                                    <td>
+                                        Internal Hacks and Tools
+                                    </td>
+                                    <td>Team K</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <th>8</th>
+                                    <td>
+                                        Modern, Agile Data Dictionary
+                                    </td>
+                                    <td>Team L</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <th>9</th>
+                                    <td>Interactive BI</td>
+                                    <td>Team N</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th>10</th>
+                                    <td>
+                                        Amazon Sponsored Listings
+                                    </td>
+                                    <td>Team O</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <th>11</th>
+                                    <td>Setup Eng Coding Challenge on Numerator.com</td>
+                                    <td>Team P</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <th>12</th>
+                                    <td>
+                                        HackDay Tool / Website
+                                    </td>
+                                    <td>Team Q</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th>13</th>
+                                    <td>Setup Eng Coding Challenge on Numerator.com</td>
+                                    <td>Team S</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <th>14</th>
+                                    <td>eReceipt as a Service</td>
+                                    <td>Team U</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #END# Task Info -->
+    </div>
+
+    <div class="row clearfix">
+        <!-- Colorful Panel Items With Icon -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="header">
+                    <h2>
+                        2019 - Q3
+                    </h2>
+                </div>
+                <div class="body">
+                    <div class="row clearfix">
+                        <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12">
+                            <div class="panel-group" id="accordion_17" role="tablist" aria-multiselectable="true">
+
+                                <div class="panel panel-col-teal">
+                                    <div class="panel-heading" role="tab" id="headingThree_17">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion_17" href="#collapseThree_17" aria-expanded="false"
+                                               aria-controls="collapseThree_17">
+                                                <i class="material-icons">contact_phone</i> HackDay Tool / Website
+
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree_17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree_17">
+                                        <div class="panel-body">
+                                            Hackdays are currently run on Google forms and google docs. It is all a bit messy. This project would create a website to house all the documents, create a nice way for people to find projects / submit ideas, and sign up for the final presentation. Generally, provide a one-stop shop for all things hackday
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-col-teal">
+                                    <div class="panel-heading" role="tab" id="headingThree_17">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion_17" href="#collapseThree_18" aria-expanded="false"
+                                               aria-controls="collapseThree_18">
+                                                <i class="material-icons">contact_phone</i> eReceipt as a Service
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree_18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree_17">
+                                        <div class="panel-body">
+                                            Prototype architecture for eReceipt as a service. It places considerable load on our primary transactional database, has different production architecture requirements than the consumer stack and functionally a good candidate to belong under its own environment.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-col-teal">
+                                    <div class="panel-heading" role="tab" id="headingThree_17">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion_17" href="#collapseThree_19" aria-expanded="false"
+                                               aria-controls="collapseThree_19">
+                                                <i class="material-icons">contact_phone</i> Ad Intel Audio to Text to Entity/Topic
+
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree_19" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree_17">
+                                        <div class="panel-body">
+                                            Can we scale out one of the key competitive advantages to our Ad Intel platform - our ability to categorize and classify different ad content/creatives by using the audio (and potentially video content) automatically via audio transcription → text analysis and video tagging?
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #END# Colorful Panel Items With Icon -->
+    </div>
+</div>

@@ -1,0 +1,28 @@
+﻿.bg-dark-green {
+    background-color: #00AB4F !important;
+    color: #fff;
+}
+
+.bg-dark-green2 {
+    background-color: #00631C !important;
+    color: #fff;
+}
+
+
+.theme-red .navbar {
+    background-color: #004a52 !important;
+}
+
+.dataTables_wrapper> .row{
+        margin-right: -0px !important;
+    margin-left: 0px !important;
+}
+
+.theme-red .sidebar .menu .list li.active > :first-child i, .theme-red .sidebar .menu .list li.active > :first-child span {
+    color: #009688 !important;
+}
+
+
+.btn:not(.btn-link):not(.btn-circle) i {
+    font-size: 15px !important;
+}
