@@ -1,0 +1,129 @@
+﻿
+@{
+    ViewBag.Title = "Idea";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="block-header">
+        <h2>DASHBOARD</h2>
+    </div>
+
+    <!-- Widgets -->
+    <div class="row clearfix">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box bg-pink hover-expand-effect">
+                <div class="icon">
+                    <i class="material-icons">playlist_add_check</i>
+                </div>
+                <div class="content">
+                    <div class="text">Total Idea</div>
+                    <div class="number count-to" data-from="0" data-to="125" data-speed="500" data-fresh-interval="20"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Basic Examples -->
+    <div class="row clearfix">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="header">
+                    <h2>
+                        BASIC EXAMPLE
+                    </h2>
+                    <ul class="header-dropdown m-r--5">
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">more_vert</i>
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                <li><a href="javascript:void(0);">Action</a></li>
+                                <li><a href="javascript:void(0);">Another action</a></li>
+                                <li><a href="javascript:void(0);">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Description</th>
+                                    <th>Approve/Reject</th>
+                                    <th>Edit</th>
+
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Description</th>
+                                    <th>Approve/Reject</th>
+                                    <th>Edit</th>
+
+                                </tr>
+                            </tfoot>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Setup Eng Coding Challenge on Numerator.com
+                                    </td>
+                                    <td>Create a coding example as a recruiter, and incentive, for candidates...</td>
+                                    <td><span class="btn btn-success"><i class="material-icons">check</i>Approved</span></td>
+                                    <td>
+                                        @*@Html.ActionLink("EDIT", "IdeaAddEdit", "Admin", new { area = "" }, new { @class = "btn btn-info waves-effect" })*@
+                                        <a href="@Url.Action("", "Account")" class="btn btn-info waves-effect">
+                                            <i class="material-icons">check</i>EDIT
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        HackDay Tool / Website
+                                    </td>
+                                    <td>Hackdays are currently run on Google forms and...</td>
+                                    <td><span class="btn btn-success"><i class="material-icons">check</i>Approved</span></td>
+                                    <td>
+                                        <a href="@Url.Action("Index", "Account")" class="btn btn-info waves-effect">
+                                            <i class="material-icons">check</i>EDIT
+                                        </a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        eReceipt as a Service
+
+                                    </td>
+                                    <td>Prototype architecture for eReceipt as a service. It places considerable...</td>
+                                    <td><span class="btn btn-danger"><i class="material-icons">clear</i>Rejected</span></td>
+                                    <td>
+                                        <a href="@Url.Action("Index", "Account")" class="btn btn-info waves-effect">
+                                            <i class="material-icons">check</i>EDIT
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        HTML5 Ad Deduplication
+                                    </td>
+                                    <td>De-dupe Ad Intel digital ads based on patterns in the DOM of the ad iframe....</td>
+                                    <td><span class="btn btn-success"><i class="material-icons">check</i>Approved</span></td>
+                                    <td>
+                                        <a href="@Url.Action("Index", "Account")" class="btn btn-info waves-effect">
+                                            <i class="material-icons">check</i>EDIT
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #END# Basic Examples -->
+</div>

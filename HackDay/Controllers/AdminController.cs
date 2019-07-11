@@ -13,6 +13,7 @@ namespace HackDay.Controllers
         {
             return View();
         }
+<<<<<<< HEAD
 
         public ActionResult Users()
         {
@@ -23,5 +24,16 @@ namespace HackDay.Controllers
         {
             return View();
         }
+=======
+        public ActionResult Idea()
+        {
+            return View();
+        }
+        public ActionResult IdeaAddEdit()
+        {
+            return View();
+        }
+
+>>>>>>> ba15cbf337241f81133eb8841fc91f990c6175a6
     }
 }
