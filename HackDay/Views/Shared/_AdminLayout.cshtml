@@ -27,6 +27,16 @@
     <link href="~/Content/plugins/morrisjs/morris.css" rel="stylesheet" />
     <!-- JQuery DataTable Css -->
     <link href="~/Content/plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet" />
+
+    <!-- Bootstrap Material Datetime Picker Css -->
+    <link href="~/Content/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
+
+    <!-- Bootstrap DatePicker Css -->
+    <link href="~/Content/plugins/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet" />
+
+    <!-- Bootstrap Select Css -->
+    <link href="~/Content/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
     <!-- Custom Css -->
     <link href="~/Content/style.css" rel="stylesheet" />
 
@@ -247,8 +257,8 @@
                             <span>User</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="Admin-Quarter-Dashboard.html">
+                    <li class='@((Request.RawUrl.ToLower().Contains("/admin/quarters") || Request.RawUrl.ToLower().Contains("/admin/editquarter"))?"active":"")'>
+                        <a href="/admin/quarters">
                             <i class="material-icons">layers</i>
                             <span>Quarter</span>
                         </a>
@@ -473,6 +483,13 @@
 
     <!-- Waves Effect Plugin Js -->
     <script src="~/Content/plugins/node-waves/waves.js"></script>
+
+    <!-- Moment Plugin Js -->
+    
+    <script src="~/Content/plugins/momentjs/moment.js"></script>
+
+    <!-- Bootstrap Datepicker Plugin Js -->
+    <script src="~/Content/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
 
     <!-- Custom Js -->
     <script src="~/scripts/admin.js"></script>
