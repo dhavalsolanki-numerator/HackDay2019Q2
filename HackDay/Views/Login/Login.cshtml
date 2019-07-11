@@ -1,5 +1,5 @@
 ﻿@*@using HackDay.Models
-@model LoginModel*@
+    @model LoginModel*@
 @{
     ViewBag.Title = "Login";
     Layout = "~/Views/Shared/_LoginLayout.cshtml";
@@ -14,53 +14,47 @@
             <div class="body">
 
                 @*@using (Html.BeginForm("Login", "Login", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @id = "sign_in", role = "form" }))
-                {*@
-                    @*<div class="msg">Sign in to start your session</div>*@
-                    <img src="~/Content/Images/NumeratorLogo.jpg" class="img-responsive" />
-                    <h3>Pick an account</h3>
+                    {*@
+                @*<div class="msg">Sign in to start your session</div>*@
+                <img src="~/Content/Images/NumeratorLogo.jpg" class="img-responsive" />
+                <h3>Pick an account</h3>
 
-                    <div class="header">
-                        <i class="material-icons">person</i>
-                        @Html.ActionLink("user@numerator.com", "Dashboard", "User")
-                        @*<a href="~/Views/User/Dashboard.cshtml" id="userLoginClick" style="vertical-align: super;">
-                            
-                        </a>*@
-                        <ul class="header-dropdown m-r--5">
-                            <li class="dropdown">
-                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                    <i class="material-icons">more_vert</i>
-                                </a>
-                                <ul class="dropdown-menu pull-right">
-                                    <li><a href="javascript:void(0);" class="waves-effect waves-block">Forget</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="header">
-                        <i class="material-icons">person_pin</i>
-                        @Html.ActionLink("admin@numerator.com", "Dashboard", "Admin")
-                        @*<a href="~/Views/Admin/Dashboard.cshtml" id="adminLoginClick" style="vertical-align: super;">
-                            admin@numerator.com
-                        </a>*@
-                        <ul class="header-dropdown m-r--5">
-                            <li class="dropdown">
-                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                    <i class="material-icons">more_vert</i>
-                                </a>
-                                <ul class="dropdown-menu pull-right">
-                                    <li><a href="javascript:void(0);" class="waves-effect waves-block">Forget</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="header">
-                        <i class="material-icons">add</i>
-                        <a href="#" style="vertical-align: super;">
-                            Use another account
-                        </a>
-                       
-                    </div>
-                    @*<div class="input-group">
+                <div class="header">
+                    <i class="material-icons">person</i>
+                    @Html.ActionLink("user@numerator.com", "Dashboard", "User")
+                    <ul class="header-dropdown m-r--5">
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">more_vert</i>
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                <li><a href="javascript:void(0);" class="waves-effect waves-block">Forget</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header">
+                    <i class="material-icons">person_pin</i>
+                    @Html.ActionLink("admin@numerator.com", "Dashboard", "Admin")
+                    <ul class="header-dropdown m-r--5">
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">more_vert</i>
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                <li><a href="javascript:void(0);" class="waves-effect waves-block">Forget</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header">
+                    <i class="material-icons">add</i>
+                    <a href="#" style="vertical-align: super;">
+                        Use another account
+                    </a>
+
+                </div>
+                @*<div class="input-group">
                         <span class="input-group-addon">
                             <i class="material-icons">person</i>
                         </span>
