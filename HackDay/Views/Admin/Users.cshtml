@@ -1,0 +1,100 @@
+﻿
+@{
+    ViewBag.Title = "Users";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="container-fluid">
+    <div class="block-header">
+        <h2>Manage User</h2>
+    </div>
+
+    <!-- Basic Examples -->
+    <div class="row clearfix">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="header">
+                    <h2>
+                        User List
+                    </h2>
+                    @*<ul class="header-dropdown m-r--5">
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="javascript:void(0);">Action</a></li>
+                                    <li><a href="javascript:void(0);">Another action</a></li>
+                                    <li><a href="javascript:void(0);">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>*@
+                   
+                </div>
+                <div class="body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            @*<tfoot>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Edit</th>
+                                    </tr>
+                                </tfoot>*@
+                            <tbody>
+                                <tr>
+                                    <td><a href="/admin/edituser" class="waves-effect">Dhaval Solanki</a></td>
+                                    <td>dhavalsolanki@numerator.com</td>
+                                    <td>
+                                        <a href="/admin/edituser" class="btn btn-info btn-xs waves-effect" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="material-icons">edit</i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="/admin/edituser" class="waves-effect">Dipak Rohit</a></td>
+                                    <td>dipakkumar.rohit@numerator.com</td>
+                                    <td>
+                                        <a href="/admin/edituser" class="btn btn-info btn-xs  waves-effect" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="material-icons">edit</i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="/admin/edituser" class="waves-effect">Nell Sorensen</a></td>
+                                    <td>nell.sorensen@numerator.com</td>
+                                    <td>
+                                        <a href="/admin/edituser" class="btn btn-info btn-xs  waves-effect" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="material-icons">edit</i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="/admin/edituser" class="waves-effect">Meet Soni</a></td>
+                                    <td>meetsoni@numerator.com</td>
+                                    <td>
+                                        <a href="/admin/edituser" class="btn btn-info btn-xs  waves-effect" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="material-icons">edit</i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="/admin/edituser" class="waves-effect">Umesh Gupta</a></td>
+                                    <td>umeshgupta@numerator.com</td>
+                                    <td>
+                                        <a href="/admin/edituser" class="btn btn-info btn-xs  waves-effect" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="material-icons">edit</i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="/admin/edituser" class="waves-effect">Rajendra Patel</a></td>
+                                    <td>rajendrapatel@numerator.com</td>
+                                    <td> <a href="/admin/edituser" class="btn btn-info btn-xs  waves-effect" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="material-icons">edit</i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #END# Basic Examples -->
+
+</div>

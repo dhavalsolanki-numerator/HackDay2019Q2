@@ -123,12 +123,9 @@
     <Content Include="Content\custom_d.css" />
     <Content Include="Content\Images\3e4fc3ab0680d0662e4ac75ba6dcb113.jpg" />
     <Content Include="Content\Images\main-bg.jpg" />
-
     <Content Include="Content\Images\user-img-background.jpg" />
     <Content Include="Content\Images\user.png" />
-
     <Content Include="Content\Images\NumeratorLogo.jpg" />
-
     <Content Include="Content\materialize.css" />
     <Content Include="Content\style.css" />
     <Content Include="Content\style.min.css" />
@@ -3609,6 +3606,8 @@
     <Content Include="Views\Register\Index.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\Admin\Dashboard.cshtml" />
+    <Content Include="Views\Admin\Users.cshtml" />
+    <Content Include="Views\Admin\EditUser.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

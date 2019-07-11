@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "EditUsers";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="container-fluid">
+    <div class="block-header">
+        <h2>Add/Edit User</h2>
+    </div>
+
+    <!-- Widgets -->
+    @*<div class="row clearfix">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box bg-pink hover-expand-effect">
+                <div class="icon">
+                    <i class="material-icons">playlist_add_check</i>
+                </div>
+                <div class="content">
+                    <div class="text">Total Users</div>
+                    <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20">15</div>
+                </div>
+            </div>
+        </div>
+    </div>*@
+    <!-- Basic Examples -->
+    <div class="row clearfix">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="header">
+                    <h2>
+                        Add/Edit User
+                    </h2>
+                    @*<ul class="header-dropdown m-r--5">
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">more_vert</i>
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                <li><a href="javascript:void(0);">Action</a></li>
+                                <li><a href="javascript:void(0);">Another action</a></li>
+                                <li><a href="javascript:void(0);">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>*@
+                    <ul class="header-dropdown m-r--5">
+                        <a href="/admin/users" class="btn bg-green waves-effect">BACK</a>
+                    </ul>
+                </div>
+                <div class="body">
+                    <form id="form_validation">
+
+                        <label for="name">Name</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" id="name" class="form-control" placeholder="Enter your Name" required>
+                            </div>
+                        </div>
+                        <label for="email_address">Email Address</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" id="email_address" class="form-control" placeholder="Enter your email address" required>
+                            </div>
+                        </div>
+                        <label for="phone">Phone Number:</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="tel" id="phone" class="form-control mobile-phone-number" placeholder="Ex: +00 (000) 000-00-00">
+                            </div>
+                        </div>
+
+                        @*<input type="checkbox" id="remember_me" class="filled-in">
+                        <label for="remember_me">Remember Me</label>*@
+                        <br>
+                        @*<a href="/admin/users" class="btn btn-info m-t-15 waves-effect">SAVE</a>*@
+                        <button class="btn btn-info m-t-15 waves-effect" type="submit">SUBMIT</button>
+                        @*<button type="button" class="btn btn-primary m-t-15 waves-effect">LOGIN</button>*@
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #END# Basic Examples -->
+
+</div>

@@ -234,15 +234,15 @@
             <!-- Menu -->
             <div class="menu">
                 <ul class="list">
-                    <li class="header">MAIN NAVIGATION</li>
-                    <li class="active">
-                        <a href="admin-dashboard.html">
+                    <li class="header">NAVIGATION</li>
+                    <li class='@(Request.RawUrl.ToLower().Contains("/admin/dashboard")?"active":"")'>
+                        <a href="/admin/dashboard">
                             <i class="material-icons">home</i>
                             <span>Home</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="Admin-User-Dashboard.html">
+                    <li class='@((Request.RawUrl.ToLower().Contains("/admin/user") || Request.RawUrl.ToLower().Contains("/admin/edituser"))?"active":"")'>
+                        <a href="/admin/users">
                             <i class="material-icons">people</i>
                             <span>User</span>
                         </a>
@@ -274,8 +274,8 @@
                     &copy; 2019 - 2020 <a href="javascript:void(0);">Numerator - HackDay</a>.
                 </div>
                 @*<div class="version">
-                    <b>Version: </b> 1.0.5
-                </div>*@
+                        <b>Version: </b> 1.0.5
+                    </div>*@
             </div>
             <!-- #Footer -->
         </aside>
@@ -436,8 +436,10 @@
     <script src="~/Content/plugins/bootstrap-select/js/bootstrap-select.js"></script>
     <!-- Slimscroll Plugin Js -->
     <script src="~/Content/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
-    <!-- Waves Effect Plugin Js -->
-    <script src="~/Content/plugins/node-waves/waves.js"></script>
+
+    <!-- Jquery Validation Plugin Css -->
+    <script src="~/Content/plugins/jquery-validation/jquery.validate.js"></script>
+
     <!-- Jquery CountTo Plugin Js -->
     <script src="~/Content/plugins/jquery-countto/jquery.countTo.js"></script>
     <!-- Morris Plugin Js -->
@@ -467,13 +469,18 @@
     <script src="~/Content/plugins/jquery-datatable/extensions/export/buttons.html5.min.js"></script>
     <script src="~/Content/plugins/jquery-datatable/extensions/export/buttons.print.min.js"></script>
 
+    <!-- Waves Effect Plugin Js -->
+    <script src="~/Content/plugins/node-waves/waves.js"></script>
+
     <!-- Custom Js -->
     <script src="~/scripts/admin.js"></script>
     @*<script src="../../js/pages/tables/jquery-datatable.js"></script>*@
+
+    <script src="~/scripts/pages/ui/tooltips-popovers.js"></script>
     <script src="~/scripts/pages/tables/jquery-datatable.js"></script>
     <script src="~/scripts/pages/index.js"></script>
     <!-- Demo Js -->
-
+    <script src="~/scripts/pages/forms/form-validation.js"></script>
     <script src="~/scripts/demo.js"></script>
 </body>
 </html>

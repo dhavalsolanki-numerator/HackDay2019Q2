@@ -13,5 +13,15 @@ namespace HackDay.Controllers
         {
             return View();
         }
+
+        public ActionResult Users()
+        {
+            return View();
+        }
+
+        public ActionResult EditUser()
+        {
+            return View();
+        }
     }
 }
