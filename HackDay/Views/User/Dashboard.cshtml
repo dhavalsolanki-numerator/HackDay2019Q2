@@ -30,7 +30,9 @@
                     <h2>
                         2019 - Q2
                     </h2>
-                    <button class="btn header-dropdown m-r-5 bg-green-heavy " style="">Submit Idea</button>
+                    <button class="btn header-dropdown m-r-5 bg-green-heavy " style="" data-toggle="modal"  data-target="#defaultModal">Submit Idea</button>
+
+                    @*<button type="button" class="btn btn-default waves-effect m-r-20" data-toggle="modal" data-target="#defaultModal">MODAL - DEFAULT SIZE</button>*@
 
                 </div>
                 <div class="body">
@@ -99,5 +101,49 @@
             </div>
         </div>
         <!-- #END# Colorful Panel Items With Icon -->
+    </div>
+
+    <div class="modal fade" id="defaultModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form id="form_validation">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="defaultModalLabel">Submit New Idea</h4>
+                    </div>
+                    <div class="modal-body">
+                        <label for="name">Title</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" id="name" class="form-control" placeholder="Enter Title" required>
+                            </div>
+                        </div>
+                        <label for="email_address">Description</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                @*<input type="text" id="email_address" class="form-control" placeholder="Description" required>*@
+                                <textarea rows="4" class="form-control no-resize" placeholder="Description"></textarea>
+                            </div>
+                        </div>
+                        <label for="phone">Tags</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="tel" id="phone" class="form-control" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="form-group demo-tagsinput-area">
+                            <div class="form-line">
+                                <input type="text" class="form-control" data-role="tagsinput" value="Amsterdam,Washington,Sydney,Beijing,Cairo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-link waves-effect">SUBMIT</button>
+                        @*<button class="btn btn-info m-t-15 waves-effect" type="submit">SUBMIT</button>*@
+                        <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
+                    </div>
+                    </form>
+</div>
+        </div>
     </div>
 </div>
