@@ -30,3 +30,7 @@
 .pagination li.active a {
     background-color: #004a52 !important
 }
+
+.btn-info, .btn-info:hover, .btn-info:active, .btn-info:focus {
+    background-color: #009688 !important;
+}
