@@ -24,6 +24,16 @@ namespace HackDay.Controllers
             return View();
         }
 
+        public ActionResult Quarters()
+        {
+            return View();
+        }
+
+        public ActionResult EditQuarter()
+        {
+            return View();
+        }
+
         public ActionResult Idea()
         {
             return View();
