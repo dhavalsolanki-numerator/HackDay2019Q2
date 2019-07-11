@@ -4695,7 +4695,8 @@ section.content {
   border: 1px solid #009688; }
   .panel-group .panel-col-teal .panel-title {
     background-color: #009688 !important;
-    color: #fff; }
+    color: #fff; border-radius: 5px;
+  }
   .panel-group .panel-col-teal .panel-body {
     border-top-color: transparent !important; }
 
@@ -4799,7 +4800,7 @@ section.content {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
-  border-radius: 0; }
+  border-radius: 5px; }
   .panel-group .panel .panel-title .material-icons {
     float: left;
     line-height: 16px;
