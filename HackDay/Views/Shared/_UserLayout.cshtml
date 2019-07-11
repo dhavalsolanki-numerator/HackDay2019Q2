@@ -204,8 +204,7 @@
                         </ul>
                     </li>
                     <!-- #END# Notifications -->
-                    <li><a href="pages/examples/sign-in.html" class="js-search" data-close="true" title="Logout"><i class="material-icons">exit_to_app</i></a></li>
-
+                    <li><a href="/Login/Login" class="js-search" data-close="true" title="Logout"><i class="material-icons">exit_to_app</i></a></li>
                     <!-- Tasks -->
                     <!-- #END# Tasks -->
                     <!--<li class="pull-right"><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="material-icons">more_vert</i></a></li>-->
@@ -224,18 +223,13 @@
                     <img src="~/Content/images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
-                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">John Doe</div>
-                    <div class="email">john.doe@example.com</div>
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">James Debney</div>
+                    <div class="email">James@numerator.com</div>
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
                             <li><a href="javascript:void(0);"><i class="material-icons">person</i>Profile</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="javascript:void(0);"><i class="material-icons">group</i>Followers</a></li>
-                            <li><a href="javascript:void(0);"><i class="material-icons">shopping_cart</i>Sales</a></li>
-                            <li><a href="javascript:void(0);"><i class="material-icons">favorite</i>Likes</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="javascript:void(0);"><i class="material-icons">input</i>Sign Out</a></li>
+                            <li><a href="/Login/Login"><i class="material-icons">input</i>Sign Out</a></li>
                         </ul>
                     </div>
                 </div>
@@ -245,34 +239,22 @@
             <div class="menu">
                 <ul class="list">
                     <li class="header">NAVIGATION</li>
-                    <li class='@(Request.RawUrl.ToLower().Contains("/admin/dashboard")?"active":"")'>
-                        <a href="/admin/dashboard">
+                    <li class='@(Request.RawUrl.ToLower().Contains("/User/dashboard")?"active":"")'>
+                        <a href="/User/dashboard">
                             <i class="material-icons">home</i>
                             <span>Home</span>
                         </a>
                     </li>
-                    <li class='@((Request.RawUrl.ToLower().Contains("/admin/user") || Request.RawUrl.ToLower().Contains("/admin/edituser"))?"active":"")'>
-                        <a href="/admin/users">
-                            <i class="material-icons">people</i>
-                            <span>User</span>
-                        </a>
-                    </li>
-                    <li class='@((Request.RawUrl.ToLower().Contains("/admin/quarters") || Request.RawUrl.ToLower().Contains("/admin/editquarter"))?"active":"")'>
-                        <a href="/admin/quarters">
+                    <li class='@((Request.RawUrl.ToLower().Contains("/User/Archive") || Request.RawUrl.ToLower().Contains("/User/Archive"))?"active":"")'>
+                        <a href="/User/Archive">
                             <i class="material-icons">layers</i>
-                            <span>Quarter</span>
+                            <span>Archive</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="Admin-Idea-Dashboard.html">
+                    <li class='@((Request.RawUrl.ToLower().Contains("/User/PendingRequest") || Request.RawUrl.ToLower().Contains("/User/PendingRequest"))?"active":"")'>
+                        <a href="/User/PendingRequest">
                             <i class="material-icons">view_list</i>
-                            <span>Idea</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Admin-Team-Dashboard.html">
-                            <i class="material-icons">group_work</i>
-                            <span>Team</span>
+                            <span>Pending Request</span>
                         </a>
                     </li>
                 </ul>
