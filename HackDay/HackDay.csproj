@@ -120,7 +120,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\custom_d.css" />
+    <Content Include="Content\Images\3e4fc3ab0680d0662e4ac75ba6dcb113.jpg" />
     <Content Include="Content\Images\main-bg.jpg" />
+    <Content Include="Content\Images\user-img-background.jpg" />
+    <Content Include="Content\Images\user.png" />
     <Content Include="Content\materialize.css" />
     <Content Include="Content\style.css" />
     <Content Include="Content\style.min.css" />
@@ -3464,6 +3468,7 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Global.asax.cs">
@@ -3598,6 +3603,8 @@
     <Content Include="Content\plugins\tinymce\skins\lightgray\fonts\tinymce.ttf" />
     <Content Include="Content\plugins\tinymce\skins\lightgray\fonts\tinymce.woff" />
     <Content Include="Views\Register\Index.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
+    <Content Include="Views\Admin\Dashboard.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
