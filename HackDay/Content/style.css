@@ -8225,3 +8225,8 @@ html.ie11 .bs-searchbox .form-control {
 .login-page .header a{font-size:15px;vertical-align: super;}
 .login-page .header .material-icons{padding-top: 5px;}
 
+.theme-red{
+        /*background: url(https://media.licdn.com/dms/image/C561BAQHtpE-SCWkD7A/company-background_10000/0?e=2159024400&v=beta&t=Q8qb3Q55YJp9Xfu-RpZBr0R8xDiatRegl_IgtP_d-Rs) no-repeat;
+    background-size: contain;
+    opacity: 0.5;*/
+}
