@@ -21,6 +21,10 @@ namespace HackDay.Controllers
         {
             return View();
         }
+        public ActionResult SubmitIdea()
+        {
+            return View();
+        }
 
         public ActionResult IdeaDetail()
         {
