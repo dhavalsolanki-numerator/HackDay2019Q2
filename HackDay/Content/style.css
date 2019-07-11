@@ -7786,6 +7786,7 @@ fieldset[disabled] .form-control {
     color: #00BCD4; }
   .login-page .header:hover{ background-color: #e6e6e6;}
   .login-page .header a{font-size:15px;}
+  .login-page .header .material-icons{padding-top: 5px;}
   .login-page .login-box .logo {
     margin-bottom: 20px; }
     .login-page .login-box .logo a {
