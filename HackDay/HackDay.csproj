@@ -3612,6 +3612,8 @@
     <Content Include="Views\Admin\IdeaAddEdit.cshtml" />
     <Content Include="Views\Admin\Team.cshtml" />
     <Content Include="Views\Admin\TeamddEdit.cshtml" />
+    <Content Include="Views\Admin\Quarters.cshtml" />
+    <Content Include="Views\Admin\EditQuarter.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
