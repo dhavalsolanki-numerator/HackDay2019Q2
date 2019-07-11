@@ -239,20 +239,20 @@
             <div class="menu">
                 <ul class="list">
                     <li class="header">NAVIGATION</li>
-                    <li class='@(Request.RawUrl.ToLower().Contains("/User/dashboard")?"active":"")'>
-                        <a href="/User/dashboard">
+                    <li class='@(Request.RawUrl.ToLower().Contains("/user/dashboard")?"active":"")'>
+                        <a href="/user/dashboard">
                             <i class="material-icons">home</i>
                             <span>Home</span>
                         </a>
                     </li>
-                    <li class='@((Request.RawUrl.ToLower().Contains("/User/Archive") || Request.RawUrl.ToLower().Contains("/User/Archive"))?"active":"")'>
-                        <a href="/User/Archive">
+                    <li class='@((Request.RawUrl.ToLower().Contains("/user/archive") || Request.RawUrl.ToLower().Contains("/user/archive"))?"active":"")'>
+                        <a href="/user/archive">
                             <i class="material-icons">layers</i>
                             <span>Archive</span>
                         </a>
                     </li>
-                    <li class='@((Request.RawUrl.ToLower().Contains("/User/PendingRequest") || Request.RawUrl.ToLower().Contains("/User/PendingRequest"))?"active":"")'>
-                        <a href="/User/PendingRequest">
+                    <li class='@((Request.RawUrl.ToLower().Contains("/user/pendingrequest") || Request.RawUrl.ToLower().Contains("/user/pendingrequest"))?"active":"")'>
+                        <a href="/user/pendingrequest">
                             <i class="material-icons">view_list</i>
                             <span>Pending Request</span>
                         </a>
