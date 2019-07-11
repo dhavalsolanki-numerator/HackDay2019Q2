@@ -3472,6 +3472,7 @@
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -3614,6 +3615,10 @@
     <Content Include="Views\Admin\TeamddEdit.cshtml" />
     <Content Include="Views\Admin\Quarters.cshtml" />
     <Content Include="Views\Admin\EditQuarter.cshtml" />
+    <Content Include="Views\User\Dashboard.cshtml" />
+    <Content Include="Views\Shared\_UserLayout.cshtml" />
+    <Content Include="Views\User\Archive.cshtml" />
+    <Content Include="Views\User\PendingRequest.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
