@@ -3614,6 +3614,8 @@
     <Content Include="Views\Admin\TeamddEdit.cshtml" />
     <Content Include="Views\Admin\Quarters.cshtml" />
     <Content Include="Views\Admin\EditQuarter.cshtml" />
+    <Content Include="Views\User\Dashboard.cshtml" />
+    <Content Include="Views\Shared\_UserLayout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
