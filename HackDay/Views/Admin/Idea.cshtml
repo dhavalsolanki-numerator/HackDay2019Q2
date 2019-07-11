@@ -6,11 +6,11 @@
 
 <div class="container-fluid">
     <div class="block-header">
-        <h2>DASHBOARD</h2>
+        <h2>Manage Idea</h2>
     </div>
 
     <!-- Widgets -->
-    <div class="row clearfix">
+    @*<div class="row clearfix">
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <div class="info-box bg-pink hover-expand-effect">
                 <div class="icon">
@@ -23,16 +23,16 @@
             </div>
         </div>
 
-    </div>
+    </div>*@
     <!-- Basic Examples -->
     <div class="row clearfix">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="card">
                 <div class="header">
                     <h2>
-                        BASIC EXAMPLE
+                        Idea List
                     </h2>
-                    <ul class="header-dropdown m-r--5">
+                    @*<ul class="header-dropdown m-r--5">
                         <li class="dropdown">
                             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                 <i class="material-icons">more_vert</i>
@@ -43,7 +43,7 @@
                                 <li><a href="javascript:void(0);">Something else here</a></li>
                             </ul>
                         </li>
-                    </ul>
+                    </ul>*@
                 </div>
                 <div class="body">
                     <div class="table-responsive">
@@ -53,11 +53,11 @@
                                     <th>Title</th>
                                     <th>Description</th>
                                     <th>Approve/Reject</th>
-                                    <th>Edit</th>
+                                    <th></th>
 
                                 </tr>
                             </thead>
-                            <tfoot>
+                            @*<tfoot>
                                 <tr>
                                     <th>Title</th>
                                     <th>Description</th>
@@ -65,19 +65,25 @@
                                     <th>Edit</th>
 
                                 </tr>
-                            </tfoot>
+                            </tfoot>*@
                             <tbody>
                                 <tr>
                                     <td>
                                         Setup Eng Coding Challenge on Numerator.com
                                     </td>
                                     <td>Create a coding example as a recruiter, and incentive, for candidates...</td>
-                                    <td><span class="btn btn-success"><i class="material-icons">check</i>Approved</span></td>
-                                    <td>
+                                    <td><span class="btn btn-success btn-xs"><i class="material-icons">check</i>Approved</span></td>
+                                    <td class="js-sweetalert">
                                         @*@Html.ActionLink("EDIT", "IdeaAddEdit", "Admin", new { area = "" }, new { @class = "btn btn-info waves-effect" })*@
-                                        <a href="@Url.Action("IdeaAddEdit", "Admin")" class="btn btn-info waves-effect">
+                                        @*<a href="@Url.Action("IdeaAddEdit", "Admin")" class="btn btn-info waves-effect">
                                             <i class="material-icons">check</i>EDIT
-                                        </a>
+                                        </a>*@
+                                        <a href="/admin/IdeaAddEdit" class="btn btn-info btn-xs waves-effect" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="material-icons">edit</i></a>
+                                        &nbsp;&nbsp;
+                                        @*<a href="/admin/IdeaAddEdit" class="btn btn-danger btn-xs  waves-effect" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="material-icons">delete_forever</i></a>*@
+                                        <button class="btn btn-xs btn-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" data-type="confirm-delete">
+                                            <i class="material-icons">delete_forever</i>
+                                        </button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -85,11 +91,17 @@
                                         HackDay Tool / Website
                                     </td>
                                     <td>Hackdays are currently run on Google forms and...</td>
-                                    <td><span class="btn btn-success"><i class="material-icons">check</i>Approved</span></td>
-                                    <td>
-                                        <a href="@Url.Action("IdeaAddEdit", "Admin")" class="btn btn-info waves-effect">
+                                    <td><span class="btn btn-success btn-xs"><i class="material-icons">check</i>Approved</span></td>
+                                    <td class="js-sweetalert">
+                                        @*<a href="@Url.Action("IdeaAddEdit", "Admin")" class="btn btn-info waves-effect">
                                             <i class="material-icons">check</i>EDIT
-                                        </a>
+                                        </a>*@
+                                        <a href="/admin/IdeaAddEdit" class="btn btn-info btn-xs waves-effect" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="material-icons">edit</i></a>
+                                        &nbsp;&nbsp;
+                                        @*<a href="/admin/IdeaAddEdit" class="btn btn-danger btn-xs  waves-effect" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="material-icons">delete_forever</i></a>*@
+                                        <button class="btn btn-xs btn-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" data-type="confirm-delete">
+                                            <i class="material-icons">delete_forever</i>
+                                        </button>
                                     </td>
 
                                 </tr>
@@ -99,11 +111,17 @@
 
                                     </td>
                                     <td>Prototype architecture for eReceipt as a service. It places considerable...</td>
-                                    <td><span class="btn btn-danger"><i class="material-icons">clear</i>Rejected</span></td>
-                                    <td>
-                                        <a href="@Url.Action("IdeaAddEdit", "Admin")" class="btn btn-info waves-effect">
+                                    <td><span class="btn btn-danger btn-xs"><i class="material-icons">clear</i>Rejected</span></td>
+                                    <td class="js-sweetalert"> 
+                                        @*<a href="@Url.Action("IdeaAddEdit", "Admin")" class="btn btn-info waves-effect">
                                             <i class="material-icons">check</i>EDIT
-                                        </a>
+                                        </a>*@
+                                        <a href="/admin/IdeaAddEdit" class="btn btn-info btn-xs waves-effect" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="material-icons">edit</i></a>
+                                        &nbsp;&nbsp;
+                                        @*<a href="/admin/IdeaAddEdit" class="btn btn-danger btn-xs  waves-effect" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="material-icons">delete_forever</i></a>*@
+                                        <button class="btn btn-xs btn-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" data-type="confirm-delete">
+                                            <i class="material-icons">delete_forever</i>
+                                        </button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -111,11 +129,17 @@
                                         HTML5 Ad Deduplication
                                     </td>
                                     <td>De-dupe Ad Intel digital ads based on patterns in the DOM of the ad iframe....</td>
-                                    <td><span class="btn btn-success"><i class="material-icons">check</i>Approved</span></td>
-                                    <td>
-                                        <a href="@Url.Action("IdeaAddEdit", "Admin")" class="btn btn-info waves-effect">
+                                    <td><span class="btn btn-success btn-xs"><i class="material-icons">check</i>Approved</span></td>
+                                    <td class="js-sweetalert">
+                                        @*<a href="@Url.Action("IdeaAddEdit", "Admin")" class="btn btn-info waves-effect">
                                             <i class="material-icons">check</i>EDIT
-                                        </a>
+                                        </a>*@
+                                        <a href="/admin/IdeaAddEdit" class="btn btn-info btn-xs waves-effect" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="material-icons">edit</i></a>
+                                        &nbsp;&nbsp;
+                                        @*<a href="/admin/IdeaAddEdit" class="btn btn-danger btn-xs  waves-effect" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="material-icons">delete_forever</i></a>*@
+                                        <button class="btn btn-xs btn-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" data-type="confirm-delete">
+                                            <i class="material-icons">delete_forever</i>
+                                        </button>
                                     </td>
                                 </tr>
                             </tbody>

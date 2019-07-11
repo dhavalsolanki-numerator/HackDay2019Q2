@@ -4,5 +4,103 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2>TeamddEdit</h2>
+<div class="container-fluid">
+    <div class="block-header">
+        <h2>Edit Team</h2>
+    </div>
 
+    <!-- Widgets -->
+    @*<div class="row clearfix">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="info-box bg-pink hover-expand-effect">
+                    <div class="icon">
+                        <i class="material-icons">playlist_add_check</i>
+                    </div>
+                    <div class="content">
+                        <div class="text">Total Users</div>
+                        <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20">15</div>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+    <!-- Basic Examples -->
+    <div class="row clearfix">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="header">
+                    <h2>
+                        Edit Team
+                    </h2>
+                    @*<ul class="header-dropdown m-r--5">
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="javascript:void(0);">Action</a></li>
+                                    <li><a href="javascript:void(0);">Another action</a></li>
+                                    <li><a href="javascript:void(0);">Something else here</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>*@
+                    <ul class="header-dropdown m-r--5">
+                        <a href="/admin/team" class="btn bg-green waves-effect">BACK</a>
+                    </ul>
+                </div>
+                <div class="body">
+                    <form>
+                        <label for="name">Name</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" id="name" class="form-control" placeholder="Team Name" value="Team A">
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        <div class="clearfix" />
+                        <h2 class="card-inside-title">Team Members</h2>
+                        <div class="row clearfix">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="#" class="waves-effect">Dhaval Solanki</a></td>
+                                            <td>dhavalsolanki@numerator.com</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#" class="waves-effect">Dipak Rohit</a></td>
+                                            <td>dipakkumar.rohit@numerator.com</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#" class="waves-effect">Nell Sorensen</a></td>
+                                            <td>nell.sorensen@numerator.com</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#" class="waves-effect">Meet Soni</a></td>
+                                            <td>meetsoni@numerator.com</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <br>
+                        <a href="Admin-User-Dashboard.html" class="btn btn-info waves-effect">Save/Change</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #END# Basic Examples -->
+
+</div>

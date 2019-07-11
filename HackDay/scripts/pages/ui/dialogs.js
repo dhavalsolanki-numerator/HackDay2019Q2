@@ -31,6 +31,9 @@ $(function () {
         else if (type === 'ajax-loader') {
             showAjaxLoaderMessage();
         }
+        else if (type === 'confirm-delete') {
+            showConfirmDeleteMessage();
+        }
     });
 });
 
@@ -58,6 +61,26 @@ function showConfirmMessage() {
         closeOnConfirm: false
     }, function () {
         swal("Deleted!", "Your imaginary file has been deleted.", "success");
+    });
+}
+
+function showConfirmDeleteMessage() {
+    swal({
+        title: "Are you sure want to delete?",
+        //text: "You will not be able to recover this imaginary file!",
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#DD6B55",
+        confirmButtonText: "Yes Delete!",
+        cancelButtonText: "No, Cancel Delete!",
+        closeOnConfirm: false,
+        closeOnCancel: false
+    }, function (isConfirm) {
+        if (isConfirm) {
+            swal("Joined!", "Deleted successfully.", "success");
+        } else {
+            swal("Cancelled", "Delete has been cancelled :)", "error");
+        }
     });
 }
 
