@@ -3606,13 +3606,12 @@
     <Content Include="Views\Register\Index.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\Admin\Dashboard.cshtml" />
-
     <Content Include="Views\Admin\Users.cshtml" />
     <Content Include="Views\Admin\EditUser.cshtml" />
-
     <Content Include="Views\Admin\Idea.cshtml" />
     <Content Include="Views\Admin\IdeaAddEdit.cshtml" />
-
+    <Content Include="Views\Admin\Team.cshtml" />
+    <Content Include="Views\Admin\TeamddEdit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
