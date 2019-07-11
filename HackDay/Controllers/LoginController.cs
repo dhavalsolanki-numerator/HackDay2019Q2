@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using HackDay.Models
+using HackDay.Models;
 
 namespace HackDay.Controllers
 {
@@ -17,15 +17,16 @@ namespace HackDay.Controllers
         [HttpPost]
         public ActionResult Login(LoginModel model)
         {
-            if(model.UserName == "user" && model.Password == "user" )
+            if (model.UserName == "user" && model.Password == "user")
             {
-                return RedirectToAction();
+                return RedirectToAction("Index", "User");
             }
-            else if(model.UserName == "admin" && model.Password == "admin")
+            else if (model.UserName == "admin" && model.Password == "admin")
             {
-                return RedirectToAction();
+                return RedirectToAction("Index", "Admin");
             }
-            return View();
+            else
+                return View();
         }
     }
 }
