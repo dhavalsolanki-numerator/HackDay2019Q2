@@ -26,3 +26,7 @@
 .btn:not(.btn-link):not(.btn-circle) i {
     font-size: 15px !important;
 }
+
+.pagination li.active a {
+    background-color: #004a52 !important
+}
