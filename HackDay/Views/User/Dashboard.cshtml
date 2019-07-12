@@ -4,6 +4,70 @@
     Layout = "~/Views/Shared/_UserLayout.cshtml";
 }
 
+<style>
+    .info-box-4 {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        height: auto !important;
+    }
+
+    .card .body .col-xs-12, .card .body .col-sm-12, .card .body .col-md-12, .card .body .col-lg-12 {
+        margin-bottom: 0px;
+    }
+
+    .sorting_1 > div > .info-box-4 {
+        margin-bottom: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    table#DataTables_Table_0 {
+        border: none;
+    }
+
+    div#DataTables_Table_0_wrapper > .row > .col-sm-6:first-child {
+        display: none;
+    }
+
+    div#DataTables_Table_0_wrapper > .row > .col-sm-6:nth-child(2) {
+        text-align: center;
+    }
+
+    .sorting_1 > .col-lg-12.col-md-12.col-sm-12.col-xs-12 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .dataTables_filter {
+        float: left !important;
+        width: 100% !important;
+        text-align: -webkit-left !important;
+    }
+
+    .tblIdeas > thead > tr:first-child {
+        display: none;
+    }
+
+    .dataTables_filter > label {
+        display: inline !important;
+    }
+
+    .form-control.input-sm {
+        width: 100% !important;
+    }
+
+    .number {
+        font-size: 18px !important;
+    }
+
+        .number > a {
+            color: #555;
+        }
+
+
+    .table-responsive {
+        overflow-x: hidden;
+    }
+</style>
 
 <div class="container-fluid">
     <div class="block-header">
@@ -11,11 +75,33 @@
     </div>
     <!-- Widgets -->
     <div class="row clearfix">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div class="info-box-4">
                 <div class="content">
+
                     <div class="text">Current Quarter</div>
-                    <div class="number">2019 - Q2</div>
+                    <div class="number"><b>2019 - Q2</b></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="info-box-4">
+                <div class="content">
+
+                    <div class="text">Registration Time: </div>
+                    <div class="number"><b>12/May/2019</b> to <b>10/Jul/2019</b></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="info-box-4">
+                <div class="content">
+
+                    <div class="text">Event Time :</div>
+                    <div class="number"><b>11/Jul/2019</b> to <b>12/Jul/2019</b></div>
+
                 </div>
             </div>
         </div>
@@ -30,79 +116,373 @@
                     <h2>
                         2019 - Q2
                     </h2>
-<<<<<<< HEAD
+
                     <button class="btn header-dropdown m-r-5 bg-green-heavy waves-effect" style="">Submit Idea</button>
-=======
-                    <button class="btn header-dropdown m-r-5 bg-green-heavy " style="" data-toggle="modal"  data-target="#defaultModal">Submit Idea</button>
+
+                    <button class="btn header-dropdown m-r-5 bg-green-heavy " style="" data-toggle="modal" data-target="#defaultModal">Submit Idea</button>
 
                     @*<button type="button" class="btn btn-default waves-effect m-r-20" data-toggle="modal" data-target="#defaultModal">MODAL - DEFAULT SIZE</button>*@
 
->>>>>>> df057814571c56d2cd0de2470f3f1f3971b3f667
+
                 </div>
                 <div class="body">
                     <div class="row clearfix">
-                        <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12">
-                            <div class="panel-group" id="Q12019" role="tablist" aria-multiselectable="true">
-                                <div class="panel panel-col-teal">
-                                    <div class="panel-heading" role="tab" id="headingThree_18">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#Q12019" href="#Q120191" aria-expanded="true"
-                                               aria-controls="Q120191">
-                                                <i class="material-icons">contact_phone</i> HackDay Tool / Website
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="Q120191" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree_18">
-                                        <div class="panel-body js-sweetalert">
-                                            Hackdays are currently run on Google forms and google docs. It is all a bit messy. This project would create a website to house all the documents, create a nice way for people to find projects / submit ideas, and sign up for the final presentation. Generally, provide a one-stop shop for all things hackday
-                                            &nbsp;&nbsp;&nbsp;
-                                            <button class="btn btn-xs btn-warning" data-toggle="tooltip" data-placement="top" title="" data-original-title="Join Team" data-type="join-team">
-                                                Team A :
-                                                <i class="material-icons">arrow_upward</i>
-                                            </button>
-                                            <h4><a href="/user/IdeaDetail" class="btn btn-xs btn-warning">Details</a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-col-teal">
-                                    <div class="panel-heading" role="tab" id="headingThree_18">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#Q12019" href="#Q1201912" aria-expanded="true"
-                                               aria-controls="Q1201912">
-                                                <i class="material-icons">contact_phone</i> eReceipt as a Service
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="Q1201912" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree_18">
-                                        <div class="panel-body">
-                                            Prototype architecture for eReceipt as a service. It places considerable load on our primary transactional database, has different production architecture requirements than the consumer stack and functionally a good candidate to belong under its own environment.
-                                            <span class="btn btn-xs btn-info">Create Team</span>
-                                            <h4><a href="/user/IdeaDetail" class="btn btn-xs btn-warning">Details</a></h4>
-                                        </div>
+                        <div class="table-responsive">
 
-                                    </div>
-                                </div>
-                                <div class="panel panel-col-teal">
-                                    <div class="panel-heading" role="tab" id="headingThree_18">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#Q12019" href="#Q1201913" aria-expanded="true"
-                                               aria-controls="Q1201913">
-                                                <i class="material-icons">contact_phone</i> Ad Intel Audio to Text to Entity/Topic
-                                                <span class="btn btn-xs btn-warning" style="float: right;">Appoval Pending</span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="Q1201913" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree_18">
-                                        <div class="panel-body">
-                                            Can we scale out one of the key competitive advantages to our Ad Intel platform - our ability to categorize and classify different ad content/creatives by using the audio (and potentially video content) automatically via audio transcription text analysis and video tagging?
-                                            <h4><a href="/user/IdeaDetail" class="btn btn-xs btn-warning">Details</a></h4>
-                                        </div>
-                                    </div>
-                                </div>
+                            <table class="tblIdeas table table-bordered table-striped table-hover js-basic-example dataTable">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="info-box-4">
+                                                    <div class="content">
+                                                        <div class="number">
+                                                            <a href="/user/IdeaDetail">HackDay Tool / Website</a>
 
-                            </div>
+                                                        </div>
+                                                        <div class="text">Hackdays are currently run on Google forms and google docs. It is all a bit messy. This project would create a website to house all the documents, create a nice way for people to find projects / submit ideas, and sign up for the final presentation. Generally, provide a one-stop shop for all things hackday </div>
+                                                        <div style="margin-top: 10px;">
+                                                            <button class="btn btn-xs btn-warning" data-toggle="modal" data-target="#joinTeamModal" data-placement="top" title="" data-original-title="Join Team">
+                                                                <i class="material-icons">arrow_upward</i>&nbsp;Team B
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="info-box-4">
+                                                    <div class="content">
+                                                        <div class="number">
+                                                            <a href="/user/IdeaDetail">  Customer Lifetime Value</a>
+                                                        </div>
+                                                        <div class="text">
+                                                            Develop a more in-depth method to calculate the lifetime value of a customer to a brand or to a retailer. Be able to show the impact of this value and how it changes due to demographics, psychographics, loyalty levels and other breaks of the data.
+
+                                                        </div>
+                                                        <div style="margin-top: 10px;">
+                                                            <button class="btn btn-xs btn-info" data-toggle="modal" data-target="#createTeamModal" data-placement="top" title="" data-original-title="Create Team">
+                                                                <i class="material-icons">add_box</i>&nbsp;Create Team
+                                                            </button>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="info-box-4">
+                                                    <div class="content">
+                                                        <div class="number">
+                                                            <a href="/user/IdeaDetail">  New Item Tracking for Disruptive products</a>
+                                                        </div>
+                                                        <div class="text">
+                                                            Use ad intel, promo, and panel data to track the impact of products that have made a splash in recent time periods and could have disruptive effects. Write a blog post or content marketing piece to really drive the impact of this. Some brand ideas: Smartly, Flamingo, Mama Bear, AmazonBasics, Bevel
+                                                        </div>
+                                                        <div style="margin-top: 10px;">
+                                                            <button class="btn btn-xs btn-info" data-toggle="modal" data-target="#createTeamModal" data-placement="top" title="" data-original-title="Create Team">
+                                                                <i class="material-icons">add_box</i>&nbsp;Create Team
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="info-box-4">
+                                                    <div class="content">
+                                                        <div class="number">
+                                                            <a href="/user/IdeaDetail">     Psychographics Hack</a>
+                                                            <span class="btn btn-xs btn-warning" style="float:right">Appoval Pending</span>
+                                                        </div>
+                                                        <div class="text">
+                                                            The Insights team has just deployed over 400 different psychographic attributes about our panelists for data mining. Come up with some unique ways to showcase insights by looking at different psychographics. Some ideas: Household Allergies - how do allergies (one or more) impact buying? How do vegans buy differently and spend differently from others?
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="info-box-4">
+                                                    <div class="content">
+                                                        <div class="number">
+                                                            <a href="/user/IdeaDetail">   Video Game Digital Console Monitoring</a>
+                                                            <span class="btn btn-xs btn-warning" style="float:right">Appoval Pending</span>
+                                                        </div>
+                                                        <div class="text">
+                                                            As consumers lean into the world of digital, desire for instant gratification has resulted in a huge shift in purchase behavior: Customers are not only opting to buy online versus in brick and mortar, but also via digital download versus physical package. This trend started some time ago with digital MP3 downloads reigning supreme over CD purchases, and has expanded into the world of gaming......
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="info-box-4">
+                                                    <div class="content">
+                                                        <div class="number">
+                                                            <a href="/user/IdeaDetail">    Automatically Create and Train Amazon Brands</a>
+                                                        </div>
+                                                        <div class="text">
+                                                            Within the SMB space, plenty of inbound leads come from smaller brands trying to understand how is Amazon impacting their brands given the limited distribution to start off with. My initial idea is to see if there is a possibility to actively monitor data from Amazon’s receipt.banner. The next thought I had would be to automatically scrape Amazon to confirm what Brand and Category the item would fall into......
+
+                                                        </div>
+                                                        <div style="margin-top: 10px;">
+                                                            <button class="btn btn-xs btn-info" data-toggle="modal" data-target="#createTeamModal" data-placement="top" title="" data-original-title="Create Team">
+                                                                <i class="material-icons">add_box</i>&nbsp;Create Team
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="info-box-4">
+                                                    <div class="content">
+                                                        <div class="number">
+                                                            <a href="/user/IdeaDetail"> State of the Shopper Thought Leadership</a>
+                                                        </div>
+                                                        <div class="text">
+                                                            Create the first of an annual presentation that all clients get, (presented live by senior leadership for big clients) that give our view on the big issues facing the industry, including the marketing/distribution plan.
+
+                                                        </div>
+                                                        <div style="margin-top: 10px;">
+                                                            <button class="btn btn-xs btn-warning" data-toggle="modal" data-target="#joinTeamModal" data-placement="top" title="" data-original-title="Join Team">
+                                                                <i class="material-icons">arrow_upward</i>&nbsp;Team B
+                                                            </button>
+                                                            @*<button class="btn btn-xs btn-info" data-toggle="modal" data-target="#joinTeamModal" data-placement="top" title="" data-original-title="Create Team">
+                                                                    <i class="material-icons">add_box</i>&nbsp;Create Team
+                                                                </button>*@
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="info-box-4">
+                                                    <div class="content">
+                                                        <div class="number">
+                                                            <a href="/user/IdeaDetail">   Supermarket Heat Map</a>
+                                                        </div>
+                                                        <div class="text">
+                                                            Map out a generic supermarket with different departments and use heatmaps to visualize performance of categories/departments for different retailers over time
+
+                                                        </div>
+                                                        <div style="margin-top: 10px;">
+                                                            <button class="btn btn-xs btn-info" data-toggle="modal" data-target="#createTeamModal" data-placement="top" title="" data-original-title="Create Team">
+                                                                <i class="material-icons">add_box</i>&nbsp;Create Team
+                                                            </button>
+                                                            @*<span class="btn btn-xs btn-info">Create Team</span>*@
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="info-box-4">
+                                                    <div class="content">
+                                                        <div class="number">
+                                                            <a href="/user/IdeaDetail">      Online NPS (Digital Shelf)</a>
+
+                                                            <span class="btn btn-xs btn-warning" style="float:right">Appoval Pending</span>
+
+                                                        </div>
+                                                        <div class="text">
+                                                            Net Promoter Score (NPS) is “the world’s leading metric for measuring customer satisfaction and loyalty.” As such, it provides an accurate gauge of customer sentiment around products, services, or brands. Research indicates that NPS “correlates with business growth” and that “companies across industries earn a higher income when they improve their Net .......
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="info-box-4">
+                                                    <div class="content">
+                                                        <div class="number">
+                                                            <a href="/user/IdeaDetail">When to Scrape</a>
+
+                                                            <span class="btn btn-xs btn-warning" style="float:right">Appoval Pending</span>
+
+                                                        </div>
+                                                        <div class="text">
+                                                            We scrape websites today based on the needs of our clients (from weekly to daily to hourly).  One of our clients this week asked us to consider when to scrape which sites for different SKUs.  In other words, could we predict which retailers tend to change price on which SKUs and adjust our bots to scrape relative to this behavior.
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="info-box-4">
+                                                    <div class="content">
+                                                        <div class="number">
+                                                            <a href="/user/IdeaDetail">     Predict where Amazon Go store will open</a>
+                                                        </div>
+                                                        <div class="text">
+                                                            Using the data we have access to, can we predict the opening locations of the new Amazon Go store. Or potentially any other store (amazon go stores: https://www.wsj.com/articles/amazon-to-launch-new-grocery-store-business-sources-say-11551461887)?
+                                                        </div>
+                                                        <div style="margin-top: 10px;">
+                                                            <button class="btn btn-xs btn-warning" data-toggle="modal" data-target="#joinTeamModal" data-placement="top" title="" data-original-title="Join Team">
+                                                                <i class="material-icons">arrow_upward</i>&nbsp;Team B
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="info-box-4">
+                                                    <div class="content">
+                                                        <div class="number">
+                                                            <a href="/user/IdeaDetail">Digital Shelf “Sign Up” Experience</a>
+
+                                                            <span class="btn btn-xs btn-warning" style="float:right">Appoval Pending</span>
+
+                                                        </div>
+                                                        <div class="text">
+                                                            Currently, the Digital Shelf onboarding experience is resource intensive. Creating a sign-up experience that allows users to get started on their own will not only free up resources, but build new customer leads and help us define the core product. The sign-up experience should allow users access to basic functionality (ie, the core product - placement). Ultimately this would be used to attract SMEs while our enterprise clients can still enjoy a more involved, personalized experience.
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="info-box-4">
+                                                    <div class="content">
+                                                        <div class="number">
+                                                            <a href="/user/IdeaDetail">Competitive Threat Analysis</a>
+
+                                                            <span class="btn btn-xs btn-warning" style="float:right">Appoval Pending</span>
+
+                                                        </div>
+                                                        <div class="text">
+                                                            Combining panel metrics and test panel survey data, can we quantify what level of threat is an upcoming brand to a legacy brand? For example, most new energy drink competitors will not survive long after entering the market, although VPX Bang has proven to be a real threat to Red Bull and Monster. Other examples can be the rise of Chobani, or a DTC boom from brands like Dollar Shave. Understanding ......
+
+                                                        </div>
+                                                        @*<div style="margin-top: 10px;">
+                                                                <span class="btn btn-xs btn-warning" >Appoval Pending</span>
+                                                            </div>*@
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
+
+                    @*<div class="row clearfix">
+                            <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12">
+                                <div class="panel-group" id="Q12019" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-col-teal">
+                                        <div class="panel-heading" role="tab" id="headingThree_18">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#Q12019" href="#Q120191" aria-expanded="true"
+                                                   aria-controls="Q120191">
+                                                    <i class="material-icons">contact_phone</i> HackDay Tool / Website
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="Q120191" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree_18">
+                                            <div class="panel-body js-sweetalert">
+                                                Hackdays are currently run on Google forms and google docs. It is all a bit messy. This project would create a website to house all the documents, create a nice way for people to find projects / submit ideas, and sign up for the final presentation. Generally, provide a one-stop shop for all things hackday
+                                                &nbsp;&nbsp;&nbsp;
+                                                <button class="btn btn-xs btn-warning" data-toggle="tooltip" data-placement="top" title="" data-original-title="Join Team" data-type="join-team">
+                                                    Team A :
+                                                    <i class="material-icons">arrow_upward</i>
+                                                </button>
+                                                <h4><a href="/user/IdeaDetail" class="btn btn-xs btn-warning">Details</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-col-teal">
+                                        <div class="panel-heading" role="tab" id="headingThree_18">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#Q12019" href="#Q1201912" aria-expanded="true"
+                                                   aria-controls="Q1201912">
+                                                    <i class="material-icons">contact_phone</i> eReceipt as a Service
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="Q1201912" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree_18">
+                                            <div class="panel-body">
+                                                Prototype architecture for eReceipt as a service. It places considerable load on our primary transactional database, has different production architecture requirements than the consumer stack and functionally a good candidate to belong under its own environment.
+                                                <span class="btn btn-xs btn-info">Create Team</span>
+                                                <h4><a href="/user/IdeaDetail" class="btn btn-xs btn-warning">Details</a></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-col-teal">
+                                        <div class="panel-heading" role="tab" id="headingThree_18">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#Q12019" href="#Q1201913" aria-expanded="true"
+                                                   aria-controls="Q1201913">
+                                                    <i class="material-icons">contact_phone</i> Ad Intel Audio to Text to Entity/Topic
+                                                    <span class="btn btn-xs btn-warning" style="float: right;">Appoval Pending</span>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="Q1201913" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree_18">
+                                            <div class="panel-body">
+                                                Can we scale out one of the key competitive advantages to our Ad Intel platform - our ability to categorize and classify different ad content/creatives by using the audio (and potentially video content) automatically via audio transcription text analysis and video tagging?
+                                                <h4><a href="/user/IdeaDetail" class="btn btn-xs btn-warning">Details</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>*@
                 </div>
             </div>
         </div>
@@ -132,10 +512,10 @@
                         </div>
                         <label for="phone">Tags</label>
                         @*<div class="form-group">
-                            <div class="form-line">
-                                <input type="tel" id="phone" class="form-control" placeholder="">
-                            </div>
-                        </div>*@
+                                <div class="form-line">
+                                    <input type="tel" id="phone" class="form-control" placeholder="">
+                                </div>
+                            </div>*@
 
                         <div class="form-group demo-tagsinput-area">
                             <div class="form-line">
@@ -148,8 +528,79 @@
                         @*<button class="btn btn-info m-t-15 waves-effect" type="submit">SUBMIT</button>*@
                         <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
                     </div>
-                    </form>
-</div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="createTeamModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form id="form_validation">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="defaultModalLabel">Create New Team</h4>
+                    </div>
+                    <div class="modal-body">
+                        <label for="name">Team Name</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" id="name" class="form-control" placeholder="Enter Team Name" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-link waves-effect">CREATE</button>
+                        @*<button class="btn btn-info m-t-15 waves-effect" type="submit">SUBMIT</button>*@
+                        <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="joinTeamModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form id="form_validation">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="defaultModalLabel">Join Team</h4>
+                    </div>
+                    <div class="modal-body">
+                        <label for="name">Team Name</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" id="name" class="form-control" placeholder="Enter Team Name" value="Team A" required>
+                            </div>
+                        </div>
+                        <label for="phone">Team Members</label>
+                        <div class="form-group demo-tagsinput-area">
+                            <div class="form-line">
+                                <input type="text" class="form-control" data-role="tagsinput" value="Dhaval Solanki, Dipak Rohit, Nell Sorensen">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-link waves-effect">JOIN</button>
+                        @*<button class="btn btn-info m-t-15 waves-effect" type="submit">SUBMIT</button>*@
+                        <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
+
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+
+
+            //var temp = $('.dataTables_filter').prev();
+            $('#DataTables_Table_0_filter').parent().css('width', '100%');
+            $('#DataTables_Table_0_filter').css('float', 'left');
+        });
+    </script>
+
+}
+
