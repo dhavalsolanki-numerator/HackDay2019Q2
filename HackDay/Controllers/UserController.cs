@@ -35,5 +35,10 @@ namespace HackDay.Controllers
             return View();
         }
 
+        public ActionResult ConfirmedIdeaDetail()
+        {
+            return View();
+        }
+
     }
 }

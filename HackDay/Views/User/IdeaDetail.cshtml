@@ -40,10 +40,54 @@
                         <span class="tag label label-info">Amsterdam<span data-role="remove"></span></span>
                         <span class="tag label label-info">Amsterdam<span data-role="remove"></span></span>
                     </div>
-
+                    <div style="margin-top: 10px;">
+                        <button class="btn btn-xs btn-warning" data-toggle="modal" data-target="#joinTeamModal" data-placement="top" title="" data-original-title="Join Team">
+                            <i class="material-icons">arrow_upward</i>&nbsp;Join Team B
+                        </button>
+                        
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-</div>
+    <div class="modal fade" id="joinTeamModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                @*<form id="form_validation">*@
+                <div class="modal-header">
+                    <h4 class="modal-title" id="defaultModalLabel">Join Team</h4>
+                </div>
+                <div class="modal-body">
+                    <label for="name">Team Name</label>
+                    <div class="form-group">
+                        <div class="form-line">
+                            <input type="text" id="name" class="form-control" placeholder="Enter Team Name" value="Team A" required>
+                        </div>
+                    </div>
+                    <label for="phone">Team Members</label>
+                    <div class="form-group demo-tagsinput-area">
+                        <span class="tag label label-info">Dhaval Solanki<span data-role="remove"></span></span>
+                        <span class="tag label label-info">Dipak Rohit<span data-role="remove"></span></span>
+                        <span class="tag label label-info">Nell Sorensen<span data-role="remove"></span></span>
+                        @*<div class="form-line">
+                                <input type="text" class="form-control" data-role="tagsinput" value="Dhaval Solanki, Dipak Rohit, Nell Sorensen">
+                                <span class="tag label label-info">Amsterdam<span data-role="remove"></span></span>
+                                <span class="tag label label-info">Amsterdam<span data-role="remove"></span></span>
+                            </div>*@
+                    </div>
+                </div>
+                <div class="modal-footer jsdemo-notification-button">
+                    <button type="submit" class="btn btn-link waves-effect" data-dismiss="modal" data-placement-from="bottom" data-placement-align="right"
+                            data-animate-enter="" data-animate-exit="" data-color-name="bg-green" data-message="Team join request has been sent successfully. You will be notify soon.">
+                        JOIN
+                    </button>
+                    @*<button class="btn btn-info m-t-15 waves-effect" type="submit">SUBMIT</button>*@
+                    <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
+
+                </div>
+                @*</form>*@
+            </div>
+        </div>
+
+    </div>

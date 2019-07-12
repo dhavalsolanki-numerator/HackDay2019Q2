@@ -23,6 +23,10 @@
     <link href="~/Content/plugins/node-waves/waves.css" rel="stylesheet" />
     <!-- Animation Css -->
     <link href="~/Content/plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Dropzone Css -->
+    <link href="~/Content/plugins/dropzone/dropzone.css" rel="stylesheet" />
+
     <!-- Morris Chart Css-->
     <link href="~/Content/plugins/morrisjs/morris.css" rel="stylesheet" />
     <!-- JQuery DataTable Css -->
@@ -242,7 +246,9 @@
             <div class="menu">
                 <ul class="list">
                     <li class="header">NAVIGATION</li>
-                    <li class='@(Request.RawUrl.ToLower().Contains("/user/dashboard")?"active":"")'>
+                    <li class='@((Request.RawUrl.ToLower().Contains("/user/dashboard") ||
+                                    Request.RawUrl.ToLower().Contains("/user/ideadetail") ||
+                                    Request.RawUrl.ToLower().Contains("/user/confirmedideadetail") )?"active":"")'>
                         <a href="/user/dashboard">
                             <i class="material-icons">home</i>
                             <span>Ideas</span>
@@ -432,6 +438,9 @@
     <!-- Slimscroll Plugin Js -->
     <script src="~/Content/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 
+    <!-- Dropzone Plugin Js -->
+    <script src="~/Content/plugins/dropzone/dropzone.js"></script>
+
     <!-- Jquery Validation Plugin Css -->
     <script src="~/Content/plugins/jquery-validation/jquery.validate.js"></script>
 
@@ -476,7 +485,7 @@
     <script src="~/Content/plugins/node-waves/waves.js"></script>
 
     <!-- Moment Plugin Js -->
-    
+
     <script src="~/Content/plugins/momentjs/moment.js"></script>
 
     <!-- Bootstrap Datepicker Plugin Js -->
@@ -495,6 +504,6 @@
 
     <script src="~/scripts/demo.js"></script>
 
-   @RenderSection("scripts", false)
+    @RenderSection("scripts", false)
 </body>
 </html>
