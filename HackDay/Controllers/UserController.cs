@@ -17,6 +17,10 @@ namespace HackDay.Controllers
         {
             return View();
         }
+        public ActionResult ArchiveIdeaDetail()
+        {
+            return View();
+        }
         public ActionResult PendingRequest()
         {
             return View();
