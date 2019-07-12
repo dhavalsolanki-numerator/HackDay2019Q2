@@ -4,5 +4,77 @@
     Layout = "~/Views/Shared/_UserLayout.cshtml";
 }
 
-<h2>PresentationSignUp</h2>
+<div class="container-fluid">
+    <div class="block-header">
+        <h2>@*Terms And Conditions*@</h2>
+    </div>
 
+
+    <!-- Basic Examples -->
+    <div class="row clearfix">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="header">
+                    <h2>
+                        Presentation Sign Up Form
+                    </h2>
+            
+                </div>
+                <div class="body">
+                    <form>
+                        <label for="name"><h4>What is the TITLE of your Hack Day project?</h4></label>
+                        
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" id="name" class="form-control" placeholder="Enter your Idea">
+                            </div>
+                        </div>
+                        <label for="email_address"><h4>Who are your team members?</h4></label>
+                        <p><small>Please separate names by commas. Just names, please, no email addresses.</small></p>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <div class="bootstrap-tagsinput">   <input type="text" placeholder="" size="1"></div><input type="text" class="form-control" data-role="tagsinput" value="" style="display: none;">
+                            </div>
+                        </div>
+                        <label for="phone"><h4>Please provide a 2-3 sentence description :</h4></label>
+                        <p><small>Please keep it very short - pretend you are in the elevator with a big investor - what is the shortest way you would pitch your hackday idea and make it easy to understand?</small></p>
+                        <div class="form-group demo-tagsinput-area">
+                            <div class="form-line">
+                                <textarea name="description" cols="30" rows="5" class="form-control no-resize" required="" aria-required="true"></textarea>
+                            </div>
+                        </div>
+                        <label for="phone"><h4>Which of the Hack Day Category does your Hack fall under? </h4></label>
+                        <div class="form-group demo-tagsinput-area">
+                            <div class="form-line">
+                                <input name="group5" type="radio" id="radio_39" class="with-gap radio-col-light-green">
+                                <label for="radio_39">Engineering Hack</label>
+                                <input name="group5" type="radio" id="radio_40" class="with-gap radio-col-light-green">
+                                <label for="radio_40">Non-Engineering Hack</label>
+                                <input name="group5" type="radio" id="radio_41" class="with-gap radio-col-light-green">
+                                <label for="radio_41">Failed Hack</label>
+                            </div>
+                        </div>
+                        <label for="phone"><h4>Which demo group will you be presenting to?</h4></label>
+                        <p><small>India - Time to be determined | Path - Monday 7/15 12:30 PM - 3:00 PM Central | Purchase Monday 7/15 3:00 PM - 5:30 PM Central</small></p>
+
+                        <div class="form-group demo-tagsinput-area">
+                            <div class="form-line">
+                                <input name="group5" type="radio" id="radio_39" class="with-gap radio-col-light-green">
+                                <label for="radio_39">India (All projects)</label>
+                                <input name="group5" type="radio" id="radio_40" class="with-gap radio-col-light-green">
+                                <label for="radio_40">Path (eCommerce, Ad Intel, etc.)</label>
+                                <input name="group5" type="radio" id="radio_41" class="with-gap radio-col-light-green">
+                                <label for="radio_41">Purchase (Panel, etc.)</label>
+                            </div>
+                        </div>
+                        <br>
+                        <button  class="btn btn-info waves-effect">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #END# Basic Examples -->
+
+</div>
