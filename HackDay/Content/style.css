@@ -8262,7 +8262,7 @@ html.ie11 .bs-searchbox .form-control {
   .bg-bronze .content .number {
     color: #fff !important; }
 
-.info-box .content .text {
+.info-box .content .text a {
     position: absolute;
     z-index: 1000;
     font-size: 14px;
