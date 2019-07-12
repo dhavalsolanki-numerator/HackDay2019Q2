@@ -34,3 +34,8 @@
 .btn-info, .btn-info:hover, .btn-info:active, .btn-info:focus {
     background-color: #009688 !important;
 }
+@media (max-width: 768px) {
+    .info-box-4 .content .desc {
+        display: none;
+    }
+}

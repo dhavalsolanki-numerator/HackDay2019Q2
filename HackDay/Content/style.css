@@ -2341,7 +2341,7 @@
     margin-left: -7px; }
     .navbar .navbar-nav .open .dropdown-menu {
       background-color: #fff;
-      position: absolute; }
+      position: absolute; margin-left:10px; }
   .navbar .dropdown-menu {
     margin-left: -50px; }
   .navbar .js-right-sidebar {
@@ -6793,7 +6793,7 @@ fieldset[disabled] .form-control {
   margin-left: 5px; }
 
 .navbar-nav .dropdown-menu {
-  margin-top: -40px !important; }
+  margin-top: 0px !important; }
 
 .label-count {
   position: absolute;
@@ -8264,6 +8264,6 @@ html.ie11 .bs-searchbox .form-control {
 
 .info-box .content .text a {
     position: absolute;
-    z-index: 1000;
+    z-index: 10;
     font-size: 14px;
 }

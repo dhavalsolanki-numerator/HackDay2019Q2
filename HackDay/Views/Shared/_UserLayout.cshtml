@@ -191,8 +191,8 @@
                     <img src="~/Content/images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
-                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">James Debney</div>
-                    <div class="email">James@numerator.com</div>
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dipak Rohit</div>
+                    <div class="email">dipakkumar.rohit@numerator.com</div>
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
@@ -225,6 +225,12 @@
                         <a href="/user/pendingrequest">
                             <i class="material-icons">view_list</i>
                             <span>Pending Request</span>
+                        </a>
+                    </li>
+                    <li class='@((Request.RawUrl.ToLower().Contains("/user/termscondition") || Request.RawUrl.ToLower().Contains("/user/termscondition"))?"active":"")'>
+                        <a href="/user/termscondition">
+                            <i class="material-icons">info</i>
+                            <span>About</span>
                         </a>
                     </li>
                 </ul>

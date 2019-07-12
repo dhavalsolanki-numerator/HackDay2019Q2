@@ -77,7 +77,7 @@ function showConfirmDeleteMessage() {
         closeOnCancel: false
     }, function (isConfirm) {
         if (isConfirm) {
-            swal("Joined!", "Deleted successfully.", "success");
+            swal("Deleted!", "Deleted successfully.", "success");
         } else {
             swal("Cancelled", "Delete has been cancelled :)", "error");
         }
