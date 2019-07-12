@@ -19,7 +19,7 @@
 
     <!-- Bootstrap Core Css -->
     <link href="~/Content/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
-    
+
 
     <!-- Waves Effect Css -->
     <link href="~/Content/plugins/node-waves/waves.css" rel="stylesheet" />
@@ -30,15 +30,40 @@
     <link href="~/Content/plugins/animate-css/animate.css" rel="stylesheet" />
 
     <!-- Custom Css -->
-    
+
     <link href="~/Content/style.css" rel="stylesheet" />
+    <style>
+        .signup-page-text {
+            max-width: 100%;
+            margin-top: 10%;
+            overflow-x: hidden;
+            margin-left: 10.333333%;
+            color: white;
+            margin-right: 9.333333%;
+        }
+
+        .text-style {
+            font-family: Roboto;
+            font-size: 18px;
+            line-height: 1.55;
+            margin-top: 14px;
+            text-align: justify;
+        }
+    </style>
 
 </head>
-<body  class="login-page signup-page">
-    <div> 
-        @RenderBody()
+<body style="background-color: #004b51;    overflow-x: hidden;">
+    <div class="row">
+        <div class="col-md-6 signup-page-text">
+            <h1>What is Hack day?</h1>
+            <p class="text-style">Each quarter we set aside time to work on small projects that can be completed in 2 days. These projects can be to explore different ideas, such as an engineering hack building some new tool, data hack exploring some new way to look at old data, culture hacks exploring new ideas to foster cross-collaboration, digital marking hacks, sales materials, etc.</p>
+            <p class="text-style">The hack days are to foster creativity and innovation muscles by exploring something new, learning, and even failing. Go push boundaries and failing is okay--we even have a category for failed hacks. The final piece is that "done is better than perfect", we want to get that project to a "done" state in 48 hours.  Afterward, every team presents what they did and what they found, built, or learned to a larger group. </p>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-3 login-page signup-page">
+            @RenderBody()
+        </div>
     </div>
-
     <!-- Jquery Core Js -->
     <script src="~/Content/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap Core Js -->
@@ -48,11 +73,11 @@
     <!-- Validation Plugin Js -->
     <script src="~/Content/plugins/jquery-validation/jquery.validate.js"></script>
     <!-- Custom Js -->
-    
+
     <script src="~/scripts/admin.js"></script>
-    
+
     <script src="~/scripts/pages/examples/sign-in.js"></script>
     <script src="~/scripts/pages/examples/sign-up.js"></script>
 </body>
- 
+
 </html>

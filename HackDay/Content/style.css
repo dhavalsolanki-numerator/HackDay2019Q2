@@ -7805,7 +7805,7 @@ fieldset[disabled] .form-control {
 /* Sign Up Page ================================ */
 .signup-page {
   background-color: #004b51;
-  padding-left: 0;
+  /*padding-left: 0;*/
   max-width: 360px;
   margin: 5% auto;
   overflow-x: hidden; }

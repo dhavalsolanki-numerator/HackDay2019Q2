@@ -3624,6 +3624,11 @@
     <Content Include="Views\User\IdeaDetail.cshtml" />
     <Content Include="Views\User\ConfirmedIdeaDetail.cshtml" />
     <Content Include="Views\User\PresentationSignUp.cshtml" />
+    <Content Include="Views\User\AboutHack.cshtml" />
+    <Content Include="Views\User\TermsCondition.cshtml" />
+    <Content Include="Views\User\ArchiveIdeaDetail.cshtml" />
+    <Content Include="Views\Admin\TeamAddEdit.cshtml" />
+    <Content Include="Views\Admin\TermsCondition.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
