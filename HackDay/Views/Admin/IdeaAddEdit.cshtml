@@ -49,27 +49,26 @@
                 </div>
                 <div class="body">
                     <form>
-                        <label for="name">Name</label>
+                        <label for="name">Idea Name</label>
                         <div class="form-group">
                             <div class="form-line">
-                                <input type="text" id="name" class="form-control" placeholder="Enter your Name">
+                                <input type="text" id="name" class="form-control" placeholder="Enter your Idea">
                             </div>
                         </div>
-                        <label for="email_address">Email Address</label>
+                        <label for="email_address">Definition</label>
                         <div class="form-group">
                             <div class="form-line">
-                                <input type="text" id="email_address" class="form-control" placeholder="Enter your email address">
+                                <input type="text" multiple id="email_address" class="form-control" placeholder="Enter your Idea description">
                             </div>
                         </div>
-                        <label for="phone">Phone Number:</label>
-                        <div class="form-group">
+                        <label for="phone">Tags:</label>
+                        <div class="form-group demo-tagsinput-area">
                             <div class="form-line">
-                                <input type="tel" id="phone" class="form-control mobile-phone-number" placeholder="Ex: +00 (000) 000-00-00">
+                                <div class="bootstrap-tagsinput">   <input type="text" placeholder="" size="1"></div><input type="text" class="form-control" data-role="tagsinput" value="Website, Application" style="display: none;">
                             </div>
                         </div>
 
-                        <input type="checkbox" id="remember_me" class="filled-in">
-                        <label for="remember_me">Remember Me</label>
+                       
                         <br>
                         <a href="Admin-User-Dashboard.html" class="btn btn-info waves-effect">Save/Change</a>
                     </form>
