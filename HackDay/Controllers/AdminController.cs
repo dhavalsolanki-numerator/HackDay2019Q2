@@ -28,6 +28,10 @@ namespace HackDay.Controllers
         {
             return View();
         }
+        public ActionResult TermsCondition()
+        {
+            return View();
+        }
 
         public ActionResult EditQuarter()
         {
@@ -46,7 +50,7 @@ namespace HackDay.Controllers
         {
             return View();
         }
-        public ActionResult TeamddEdit()
+        public ActionResult TeamAddEdit()
         {
             return View();
         }
