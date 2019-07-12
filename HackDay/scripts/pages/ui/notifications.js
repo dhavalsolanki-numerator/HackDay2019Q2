@@ -6,7 +6,10 @@ $(function () {
         var animateExit = $(this).data('animate-exit');
         var colorName = $(this).data('color-name');
 
-        showNotification(colorName, null, placementFrom, placementAlign, animateEnter, animateExit);
+        var message = $(this).data('message');
+        
+
+        showNotification(colorName, message, placementFrom, placementAlign, animateEnter, animateExit);
     });
 });
 
