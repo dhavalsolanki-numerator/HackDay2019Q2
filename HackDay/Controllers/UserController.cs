@@ -21,6 +21,14 @@ namespace HackDay.Controllers
         {
             return View();
         }
+        public ActionResult TermsCondition()
+        {
+            return View();
+        }
+        public ActionResult AboutHack()
+        {
+            return View();
+        }
         public ActionResult PendingRequest()
         {
             return View();
