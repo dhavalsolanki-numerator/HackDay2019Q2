@@ -123,6 +123,7 @@
     <Content Include="Content\custom_d.css" />
     <Content Include="Content\Images\3e4fc3ab0680d0662e4ac75ba6dcb113.jpg" />
     <Content Include="Content\Images\main-bg.jpg" />
+    <Content Include="Content\Images\trophy-outline.png" />
     <Content Include="Content\Images\user-img-background.jpg" />
     <Content Include="Content\Images\user.png" />
     <Content Include="Content\Images\NumeratorLogo.jpg" />
