@@ -3067,7 +3067,7 @@ section.content {
   background-color: #fff;
   position: relative;
   overflow: hidden;
-  margin-bottom: 30px; }
+  margin-bottom: 10px; }
   .info-box .icon {
     display: inline-block;
     text-align: center;
@@ -8234,4 +8234,36 @@ html.ie11 .bs-searchbox .form-control {
 .menu li:hover {
     background-color: #e9e9e9;  
     transition: 0.5s;
+}
+.info-box .icon img:hover {
+    opacity: 0.4;
+    -moz-transform: rotate(-32deg) scale(1.4);
+    -ms-transform: rotate(-32deg) scale(1.4);
+    -o-transform: rotate(-32deg) scale(1.4);
+    -webkit-transform: rotate(-32deg) scale(1.4);
+    transform: rotate(-32deg) scale(1.4);
+}
+.bg-gold {
+  background-color: #ffe821 !important;
+  color: #fff; }
+  .bg-gold .content .text,
+  .bg-gold .content .number {
+    color: #fff !important; }
+ .bg-silver {
+  background-color: #C0C0C0 !important;
+  color: #fff; }
+  .bg-silver .content .text,
+  .bg-silver .content .number {
+    color: #fff !important; }
+ .bg-bronze {
+  background-color: #b9722d !important;
+  color: #fff; }
+  .bg-bronze .content .text,
+  .bg-bronze .content .number {
+    color: #fff !important; }
+
+.info-box .content .text a {
+    position: absolute;
+    z-index: 1000;
+    font-size: 14px;
 }
