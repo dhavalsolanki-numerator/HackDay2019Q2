@@ -256,12 +256,7 @@
                             <span>Home</span>
                         </a>
                     </li>
-                    <li class='@((Request.RawUrl.ToLower().Contains("/admin/user") || Request.RawUrl.ToLower().Contains("/admin/edituser"))?"active":"")'>
-                        <a href="/admin/users">
-                            <i class="material-icons">people</i>
-                            <span>User</span>
-                        </a>
-                    </li>
+                  
                     <li class='@((Request.RawUrl.ToLower().Contains("/admin/quarters") || Request.RawUrl.ToLower().Contains("/admin/editquarter"))?"active":"")'>
                         <a href="/admin/quarters">
                             <i class="material-icons">layers</i>
@@ -278,6 +273,12 @@
                         <a href="/admin/team">
                             <i class="material-icons">group_work</i>
                             <span>Team</span>
+                        </a>
+                    </li>
+                    <li class='@((Request.RawUrl.ToLower().Contains("/admin/user") || Request.RawUrl.ToLower().Contains("/admin/edituser"))?"active":"")'>
+                        <a href="/admin/users">
+                            <i class="material-icons">people</i>
+                            <span>User</span>
                         </a>
                     </li>
                 </ul>
@@ -500,7 +501,7 @@
     <script src="~/Content/plugins/sweetalert/sweetalert.min.js"></script>
     @*<script src="~/Content/plugins/ckeditor/ckeditor.js"></script>
     <script src="~/Content/plugins/tinymce/tinymce.js"></script>*@
-
+   
     <!-- Custom Js -->
     <script src="~/scripts/admin.js"></script>
     @*<script src="~/scripts/pages/forms/editors.js"></script>*@
@@ -509,11 +510,12 @@
     <script src="~/scripts/pages/ui/dialogs.js"></script>
     <script src="~/scripts/pages/tables/jquery-datatable.js"></script>
     <script src="~/scripts/pages/index.js"></script>
-
+    <script src="~/scripts/pages/forms/basic-form-elements.js"></script>
     <script src="~/scripts/pages/forms/form-validation.js"></script>
     <!-- Demo Js -->
 
     <script src="~/scripts/demo.js"></script>
+    <script src="~/scripts/Custom.js"></script>
 </body>
 </html>
 
